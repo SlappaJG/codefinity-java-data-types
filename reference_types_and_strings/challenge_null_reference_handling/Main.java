@@ -2,8 +2,16 @@ package com.example;
 
 public class Main {
     public static String checkString(String input) {
-        // Your code here
-        return null;
+        if(input == null)
+        {
+            return "Input is null.";
+        }
+        else{
+            if(input.isEmpty())
+                return "Input is empty.";
+            else
+                return "Input is: " + input;
+        }
     }
 
     public static void main(String[] args) {
